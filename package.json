@@ -10,6 +10,10 @@
     "astro": "astro"
   },
   "packageManager": "pnpm@8.15.2",
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=8.15"
+  },
   "dependencies": {
     "astro": "4.3.3",
     "@astrojs/check": "0.4.1",
