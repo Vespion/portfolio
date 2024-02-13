@@ -4,5 +4,33 @@
     "config:js-app",
     "config:best-practices",
     "npm:unpublishSafe"
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true,
+    "platformAutomerge": true,
+    "automergeType": "pr",
+    "pruneBranchAfterAutomerge": true,
+    "platformCommit": true
+  },
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies"],
+      "matchPackagePatterns": ["lint", "prettier"],
+      "automerge": true,
+      "platformAutomerge": true,
+      "automergeType": "pr",
+      "pruneBranchAfterAutomerge": true,
+      "platformCommit": true
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true,
+      "platformAutomerge": true,
+      "automergeType": "pr",
+      "pruneBranchAfterAutomerge": true,
+      "platformCommit": true
+    }
   ]
 }
