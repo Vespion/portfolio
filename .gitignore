@@ -3,6 +3,14 @@ dist/
 
 # generated types
 .astro/
+faviconData.json
+public/android-chrome-*
+public/apple-touch-icon*
+public/favicon*
+public/mstile-*
+public/safari-pinned-tab.svg
+public/*.webmanifest
+public/browserconfig.xml
 
 # dependencies
 node_modules/

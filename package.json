@@ -5,9 +5,10 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "astro check && pnpm run gen-favicons && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "gen-favicons": "real-favicon generate faviconDescription.json faviconData.json public"
   },
   "packageManager": "pnpm@8.15.3",
   "engines": {
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
+    "cli-real-favicon": "0.0.8",
     "semantic-release": "23.0.2"
   }
 }
