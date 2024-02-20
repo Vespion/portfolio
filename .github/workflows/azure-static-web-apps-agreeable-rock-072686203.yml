@@ -11,6 +11,10 @@ on:
     branches:
       - main
 
+# Since these jobs either interact with the repository or azure, we need to ensure they don't run at the same time
+concurrency:
+  group: build-and-test
+
 jobs:
   test_and_version_job:
     runs-on: ubuntu-latest
