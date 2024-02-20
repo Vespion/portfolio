@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/Vespion/portfolio/compare/v1.0.1...v1.0.2) (2024-02-20)
+
+
+### fix
+
+* **deps:** update dependency [@astrojs](https://github.com/astrojs)/check to v0.5.4 ([3936b69](https://github.com/Vespion/portfolio/commit/3936b698136d4b908db8788988cdfab3919a0bd6))
+* **deps:** update dependency [@astrojs](https://github.com/astrojs)/check to v0.5.4 ([6cfb124](https://github.com/Vespion/portfolio/commit/6cfb124d7060385bd544d845c8501ab9b0be8634))
+
 ## [1.0.1](https://github.com/Vespion/portfolio/compare/v1.0.0...v1.0.1) (2024-02-20)
 
 
