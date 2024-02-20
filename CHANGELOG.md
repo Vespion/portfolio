@@ -1,3 +1,25 @@
+## [1.0.3](https://github.com/Vespion/portfolio/compare/v1.0.2...v1.0.3) (2024-02-20)
+
+
+### chore
+
+* **deps:** update actions/cache action to v4 ([5f4316a](https://github.com/Vespion/portfolio/commit/5f4316a3b330731f25b00c4e2ba5243e322ab47f))
+* **deps:** update actions/cache action to v4 ([d347a1e](https://github.com/Vespion/portfolio/commit/d347a1ea64ec82f44433a486691d3200c1732e62))
+
+
+### ci
+
+* add concurrency marker to job ([2a576ad](https://github.com/Vespion/portfolio/commit/2a576ad8f9c8c14f918fe36f8f54a7cbfeb062d6))
+* configure npm publish to false ([158d593](https://github.com/Vespion/portfolio/commit/158d593b563c87720c7fd91cbef406a64984dd6e))
+* configure npm publish to false ([05d8259](https://github.com/Vespion/portfolio/commit/05d82593e84c12c031451051fbd826efc1887e1c))
+* package.json version will now be updated ([b607b7b](https://github.com/Vespion/portfolio/commit/b607b7b9b6addf98b787299baeb4a6146f6a1494))
+
+
+### fix
+
+* **deps:** update dependency astro to v4.4.0 ([f46cfd6](https://github.com/Vespion/portfolio/commit/f46cfd62bf82d54dcccb551fbd228e6d70427d46))
+* **deps:** update dependency astro to v4.4.0 ([19ef6b2](https://github.com/Vespion/portfolio/commit/19ef6b23928cdd45075a40df396dae12ce60660f))
+
 ## [1.0.2](https://github.com/Vespion/portfolio/compare/v1.0.1...v1.0.2) (2024-02-20)
 
 
