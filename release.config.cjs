@@ -226,11 +226,7 @@ function customTransform(commit, context) {
     if (commit.references) {
         // Remove references that already appear in the subject
         commit.references = commit.references.filter(reference => {
-            if (!references.includes(reference.issue)) {
-                return true;
-            }
-
-            return false;
+            return !references.includes(reference.issue);
         });
     }
 
