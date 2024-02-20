@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/Vespion/portfolio/compare/v1.0.0...v1.0.1) (2024-02-20)
+
+
+### chore
+
+* **deps:** pin dependencies ([a78a5eb](https://github.com/Vespion/portfolio/commit/a78a5ebe8d120623d558440ec9cc6fd1babde389))
+* **deps:** pin dependencies ([6783ac3](https://github.com/Vespion/portfolio/commit/6783ac3d740bb3bff467ec48aed82c35940eeb3f))
+
 # 1.0.0 (2024-02-20)
 
 
