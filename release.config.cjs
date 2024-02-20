@@ -38,7 +38,12 @@ const plugins = [
     ],
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
-    "@semantic-release/npm",
+    [
+        "@semantic-release/npm",
+        {
+            "npmPublish": false
+        }
+    ],
     [
         "@semantic-release/git",
         {
