@@ -11,26 +11,34 @@
     "platformAutomerge": true,
     "automergeType": "pr",
     "pruneBranchAfterAutomerge": true,
-    "platformCommit": true
+    "platformCommit": "enabled"
   },
   "packageRules": [
     {
-      "matchDepTypes": ["devDependencies"],
-      "matchPackagePatterns": ["lint", "prettier"],
+      "matchDepTypes": [
+        "devDependencies"
+      ],
       "automerge": true,
       "platformAutomerge": true,
       "automergeType": "pr",
       "pruneBranchAfterAutomerge": true,
-      "platformCommit": true
+      "platformCommit": "enabled",
+      "matchPackageNames": [
+        "/lint/",
+        "/prettier/"
+      ]
     },
     {
-      "matchUpdateTypes": ["minor", "patch"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
       "matchCurrentVersion": "!/^0/",
       "automerge": true,
       "platformAutomerge": true,
       "automergeType": "pr",
       "pruneBranchAfterAutomerge": true,
-      "platformCommit": true
+      "platformCommit": "enabled"
     }
   ]
 }
