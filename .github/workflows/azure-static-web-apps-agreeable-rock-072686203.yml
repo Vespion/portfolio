@@ -24,27 +24,27 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
         with:
           submodules: true
           lfs: true
           fetch-depth: 0
 
       - name: Setup Node
-        uses: actions/setup-node@1a4442cacd436585916779262731d5b162bc6ec7 # v3
+        uses: actions/setup-node@3235b876344d2a9aa001b8d1453c930bba69e610 # v3.9.1
         with:
-          node-version: ">=20.8.1"
+          node-version: "26.8.1"
 
-      - uses: pnpm/action-setup@v3
+      - uses: pnpm/action-setup@a3252b78c470c02df07e9d59298aecedc3ccdd6d # v3.0.0
         name: Install pnpm
         with:
-            version: 8
+            version: 8.15.9
             run_install: false
 
       - name: Get pnpm store directory
         run: echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
 
-      - uses: actions/cache@13aacd865c20de90d75de3b17ebe84f7a17d57d2 # v4
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
         name: Setup pnpm cache
         with:
           path: ${{ env.STORE_PATH }}
@@ -74,7 +74,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
         with:
           submodules: true
           lfs: true
